@@ -1,11 +1,28 @@
 body {
   font-family: 'Rubik', sans-serif;
+  margin: 0;
 }
 
 .container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   padding: 15px 15px;
+  box-sizing: border-box;
+}
+
+.menu {
+  padding-top: 50px;
+}
+
+.logoo {
+  margin-top: 20px;
+}
+
+.hero {
+  background-image: url('../img/Group\ 120.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-bottom: 250px;
 }
 
 .header__list {
@@ -17,10 +34,17 @@ body {
   letter-spacing: 1.5px;
   color: #242A45;
   margin-left: 30px;
+  transition: all 0.5s ease;
+}
+
+.header__list:hover {
+  color: #FA5959;
+  transition: all 0.5s ease;
+
 }
 
 .header__list__btn {
-  padding: 8px 10px;
+  padding: 12px 32px;
   background-color: #FA5959;
   color: white;
   margin-left: 30px;
@@ -31,6 +55,15 @@ body {
   text-align: right;
   letter-spacing: 1.5px;
   border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 1s ease;
+}
+
+.header__list__btn:hover {
+  background-color: #fff;
+  color: #FA5959;
+  border: 2px solid #FA5959;
+  transition: all 1s ease;
 }
 
 .simple__div {
@@ -68,6 +101,14 @@ body {
   padding: 12px 15px;
   background-color: #5267DF;
   border-radius: 5px;
+  transition: all 1s ease;
+}
+
+.btn__blue:hover {
+  background-color: #fff;
+  color: #5267DF;
+  border: 1px solid #5267DF;
+  transition: all 1s ease;
 }
 
 .btn__fff {
@@ -76,13 +117,13 @@ body {
   border-radius: 5px;
   color: #000;
   margin-left: 15px;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .btn__fff:hover {
   background-color: #5267DF;
   color: #fff;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .features__title {
@@ -93,6 +134,20 @@ body {
   text-align: center;
   letter-spacing: -0.1px;
   color: #242A45;
+}
+
+.realtive {
+  position: relative;
+}
+
+.first::before {
+  width: 100px;
+  height: 5px;
+  content: "";
+  display: block;
+  background-color: #FA5959;
+  position: absolute;
+  top: 110%;
 }
 
 .features__txt {
@@ -122,6 +177,13 @@ body {
   margin-bottom: 50px;
 }
 
+#click {
+  background-image: url('../img/Group\ 122.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-bottom: 250px;
+}
+
 .click__starts {
   margin-left: 60px;
 }
@@ -147,13 +209,20 @@ body {
 }
 
 .click__btn {
-padding: 10px 12px;
-background-color: blue;
-border-radius: 8px;
+  padding: 10px 12px;
+  background-color: blue;
+  border-radius: 8px;
+  transition: all 1s ease;
+  border: 2px solid transparent;
 }
+
+
 
 .click__btn:hover {
   background-color: #fff;
+  color: #5267DF;
+  border: 2px solid #5267DF;
+  transition: all 1s ease;
 }
 
 .click {
@@ -202,20 +271,17 @@ border-radius: 8px;
 
 .chorme {
   text-align: center;
-  width: 280px;
-  height: 330px;
+  width: 265px;
+  height: 300px;
   list-style: none;
   padding: 15px;
-  box-shadow: 0 0 5px 2px rgb(223, 217, 217);
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
   border-radius: 8px;
   transition: all 1s ease;
+  padding-bottom: 50px;
 }
 
-.chorme:hover {
-  background: rgb(247, 247, 247);
-  background: linear-gradient(90deg, rgba(247, 247, 247, 1) 33%, rgba(255, 255, 255, 1) 59%);
-  transition: all 1s ease;
-}
+
 
 .chorme__img {
   margin-bottom: 20px;
@@ -253,6 +319,26 @@ border-radius: 8px;
   text-decoration: none;
   color: #fff;
   display: inline-block;
+  transition: all 1s ease;
+  display: block;
+}
+
+.chorme__btn::before {
+  content: "";
+  width: 200%;
+  height: 25px;
+  background-image: url("../img/dots.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -50%;
+  left: -5%;
+}
+
+.chorme__btn:hover {
+  background-color: #fff;
+  border: 1px solid #5267DF;
+  color: #242A45;
+  transition: all 1s ease;
 }
 
 .chorme:nth-child(2) {
